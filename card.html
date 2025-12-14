@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тайтл</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.css" integrity="sha512-nF9G9AnUEVv+zx285OqwGE8c1gmkys3qV6iuDK5rVG/UuZLWRgGBy/tN5WzSXXuZDZ1YvwhJ9+a/DTj71L8Lrw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/lightgallery.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="menu_burger">
+<div class="menu_scroll">
+</div>
+</div>
+<div class="site_wrapper">
+<header class="header">
+<div class="header_top content-padding">
+<div class="block_inner">
+<div class="burger"></div>
+<div class="link_icons">
+<a href="" class="home"></a>
+<a href="" class="feedback"></a>
+<a href="" class="sitemap"></a>
+</div>
+<div class="menu_header">
+<ul>
+<li><a href="">О бренде</a></li>
+<li><a href="">Доставка и оплата</a></li>
+<li><a href="">Контакты</a></li>
+</ul>
+</div>
+<div class="action_link compare_link">
+<a class="name" href="">Сравнение:</a>
+<span id="boqtycompare" class="qty">0</span>
+</div>
+<div class="action_link bookmark_link">
+<a class="name" href="">Закладки:</a>
+<span id="boqtybookmark" class="qty">0</span>
+</div>
+<div class="action_link cart_mini_link">
+<div class="name">Корзина:</div>
+<div class="qty_main">
+<span class="qty">17</span> / <span>213 060 </span>руб.
+</div>
+<a href="" class="btn_button">Оформить</a>
+<div class="cart_mini">
+<div class="cart_mini_body">
+<div class="product_cart">
+<div class="image">
+<img src="files/card.jpg" alt="">
+</div>
+<div class="product_info">
+<div class="product_name">Душевая кабина Jacuzzi Mynima 140 Wall</div>
+<div class="product_price">39 500 <span>руб.</span></div>
+</div>
+<div class="product_controls">
+<button class="qty_btn minus">-</button>
+<input type="text" class="qty_input" value="1" min="1">
+<button class="qty_btn plus">+</button>
+</div>
+<button class="remove_btn"></button>
+</div>
+<div class="product_cart">
+<div class="image">
+<img src="files/card.jpg" alt="">
+</div>
+<div class="product_info">
+<div class="product_name">Мебель для ванной Verona Area, набор из 3 предметов</div>
+<div class="product_price">28 700 <span>руб.</span></div>
+</div>
+<div class="product_controls">
+<button class="qty_btn minus">-</button>
+<input type="text" class="qty_input" value="1" min="1">
+<button class="qty_btn plus">+</button>
+</div>
+<button class="remove_btn"></button>
+</div>
+<div class="product_cart">
+<div class="image">
+<img src="files/card.jpg" alt="">
+</div>
+<div class="product_info">
+<div class="product_name">Душевая кабина Jacuzzi Mynima 80 Sphere</div>
+<div class="product_price">19 990 <span>руб.</span></div>
+</div>
+<div class="product_controls">
+<button class="qty_btn minus">-</button>
+<input type="text" class="qty_input" value="1" min="1">
+<button class="qty_btn plus">+</button>
+</div>
+<button class="remove_btn"></button>
+</div>
+</div>
+<div class="cart_mini_bottom">
+<button type="button" class="btn_button goto_cart">Перейти в корзину</button>
+<button type="button" class="btn_button clear_cart">Очистить</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="header_bottom content-padding">
+<div class="block_inner">
+<div class="top_block">
+<div class="logo">
+<a href="">
+<img src="files/logo.png" alt="">
+</a>
+</div>
+<div class="contacts_header">
+<div class="time_block">
+<div class="name">Работаем: </div>
+<div class="time">09:00 — 20:00</div>
+<div class="text">консультации и заказ <br>ежедневно </div>
+</div>
+<div class="time_block">
+<div class="name">Доставка:</div>
+<div class="time">10:00 — 19:00</div>
+<div class="text">кроме выходных, <br>доставка по округам</div>
+</div>
+<div class="time_block last">
+<div class="name">Оплата:</div>
+<div class="text">Наличными водителю или безналично через банк. <br> Продажа в кредит!</div>
+</div>
+<div class="phone_block">
+<div><a href="tel:84957654321"><span style="color: #999999;">8</span> <span style="color: #4c4c4c;">495</span> 765 43 21</a></div>
+<div><a href="tel:89169876543"><span style="color: #999999;">8</span> <span style="color: #4c4c4c;">916</span> 987 65 43</a></div>
+<div class="btn_call" data-remodal-target="collback-popup">Обратный звонок</div>
+</div>
+</div>
+</div>
+<div class="menu_block">
+<div class="menu_header">
+<ul>
+<li>
+<a href="">Смесители</a>
+<div class="hover_lavel">
+<ul class="name">
+<li><a href="/smesiteli/smesiteli-dlya-rakoviny-i-umyvalnika/gerhans/">Для раковины</a></li>
+<li><a href="/smesiteli/smesiteli-dlya-vanny/gerhans/">Для ванны</a></li>
+<li><a href="/smesiteli/smesiteli-dlya-dusha/gerhans/">Для душа</a></li>
+<li><a href="/smesiteli/smesiteli-dlya-kukhni/gerhans/">Для кухни</a></li>
+<li><a href="/smesiteli/smesiteli-dlya-bide/gerhans/">Для биде</a></li>
+<li><a href="/smesiteli/smesiteli-s-gigienicheskim-dushem/gerhans/">С гигиеническим душем</a></li>
+</ul>
+<ul class="img">
+<li style="display: list-item;"><a href=""><img src="/files/smesiteli-dlya-rakovini.jpg" alt="Для раковины"></a></li>
+<li style="display: none;"><a href=""><img src="/files/smesiteli-dlya-vanni.jpg" alt="Для ванны"></a></li>
+<li style="display: none;"><a href=""><img src="/files/smesiteli-dlya-dusha(2).jpg" alt="Для душа"></a></li>
+<li style="display: none;"><a href=""><img src="/files/smesiteli-dlya-kuhni(2).jpg" alt="Для кухни"></a></li>
+<li style="display: none;"><a href=""><img src="../files/smesiteli-dlya-bide(1).jpg" alt="Для биде"></a></li>
+<li style="display: none;"><a href=""><img src="files/smesiteli-s-gigienicheskim-dushem(3).jpg" alt="С гигиеническим душем"></a></li>
+</ul>
+</div>
+</li>
+<li><a href="">Раковины</a></li>
+<li><a href="">Аксессуары</a></li>
+<li><a href="">Зеркала</a></li>
+<li><a href="">Мойки</a></li>
+<li><a href="">Водоснабжение</a></li>
+</ul>
+</div>
+<div class="search_block">
+<div class="name">Поиск:</div>
+<form action="">
+<input type="text">
+<button></button>
+</form>
+</div>
+</div>
+</div>
+<div class="line"></div>
+</div>
+<div class="content_block_wr"><div class="content_site content-padding">
+<div class="block_inner">
+<div class="card_page">
+<div class="h1_title">
+<h1>Заголовок текстового раздела</h1>
+<div class="link_back"><a href="">Ссылка «назад»</a></div>
+</div>
+<div class="path_block">
+<a href="">Главная</a><span></span><a href="">екстовый раздел</a><span></span><a href="">Подраздел текстового раздела </a><span></span>Еще один уровень
+</div>
+<div class="card_page_inner">
+<div class="left_card">
+<div class="card_image">
+<div class="gall_image">
+<div class="swiper gall-swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<a href="files/card.jpg"><img src="files/card.jpg" alt=""></a>
+</div>
+<div class="swiper-slide">
+<a href="files/card.jpg"><img src="files/card.jpg" alt=""></a>
+</div>
+<div class="swiper-slide">
+<a href="files/card.jpg"><img src="files/card.jpg" alt=""></a>
+</div>
+<div class="swiper-slide">
+<a href="files/card.jpg"><img src="files/card.jpg" alt=""></a>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper gall-thumb-swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<img src="files/card.jpg" alt="">
+</div>
+<div class="swiper-slide">
+<img src="files/card.jpg" alt="">
+</div>
+<div class="swiper-slide">
+<img src="files/card.jpg" alt="">
+</div>
+<div class="swiper-slide">
+<img src="files/card.jpg" alt="">
+</div>
+</div>
+</div>
+</div>
+<div class="params_block">
+<div class="title">Характеристики</div>
+<ul>                            
+<li>
+<div class="name">Форма: </div>
+<div class="val">Округлая</div>
+</li>
+<li>
+<div class="name">Материал: </div>
+<div class="val">Санфаянс</div>
+</li>
+<li>
+<div class="name">Длина, мм:</div>
+<div class="val">560</div>
+</li>
+<li>
+<div class="name">Ширина, мм:</div>
+<div class="val">455</div>
+</li>
+<li>
+<div class="name">Высота, мм:</div>
+<div class="val">195</div>
+</li>
+<li>
+<div class="name">Производитель:</div>
+<div class="val">Ideal Standart</div>
+</li>
+<li>
+<div class="name">Страна:</div>
+<div class="val">Германия</div>
+</li>
+</ul>
+</div>
+<div class="docs">
+<div class="title">Документация</div>
+<ul>
+<li><a href="">Техническая информация о товаре</a></li>
+<li><a href="">Инструкция по установке</a></li>
+<li><a href="">Эксплуатационные характеристики</a></li>
+<li><a href="">Спецификации</a></li>
+</ul>
+</div>
+<div class="texnology">
+<div class="title">Технологии</div>
+<div class="inner">
+<div class="item">
+<img src="files/tex.png" alt="">
+</div>
+<div class="item">
+<img src="files/tex-02.png" alt="">
+</div>
+<div class="item">
+<img src="files/tex-03.png" alt="">
+</div>
+<div class="item">
+<img src="files/tex-04.png" alt="">
+</div>
+</div>
+</div>
+</div>
+<div class="right_card">
+<div class="cart_top">
+<div class="left_card_inner">
+<div class="name">Тумба напольная Верона Луссо SU 101 с раковиной Ideal Standart Motion</div>
+<div class="body">
+<p>Фасады и боковые стенки выполнены из стекла,  с внутренней стороны окрашенного специальной влагостойкой краской.</p>
+<p>Подстолье с двумя дверцами укомплектованными хром ручками, а также доводчиками, которые позволяют дверцам плавно и бесшумно закрываться. Внутри подстолья стеклянные </p>
+</div>
+<div class="action_card">
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div>
+</div>
+<div class="right_card_inner">
+<div class="params_block">
+<div class="title">Группы</div>
+<ul>                            
+<li>
+<div class="name">По помещениям</div>
+<div class="val">смесители и термостаты</div>
+</li>
+<li>
+<div class="name">По назначению</div>
+<div class="val">смесители для раковины</div>
+</li>
+<li>
+<div class="name">По типу</div>
+<div class="val">смесители</div>
+</li>
+<li>
+<div class="name">Тип управления</div>
+<div class="val">двухвентильные смесители</div>
+</li>
+<li>
+<div class="name">Тип монтажа</div>
+<div class="val">на 1 отверстие</div>
+</li>
+<li>
+<div class="name">Тип излива</div>
+<div class="val">смесители с литым изливом</div>
+</li>
+<li>
+<div class="name">Серия</div>
+<div class="val">SAN REMO</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="select_products">
+<div class="title_table">
+<div class="title_name">Выберите комплектацию</div>
+<div class="price">Цена, руб.</div>
+<div class="select">Выбор</div>
+</div>
+<div class="select_products_inner">
+<div class="select_product">
+<div class="image">
+<a href=""><img src="files/card.jpg" alt=""></a>
+</div>
+<div class="select_product_datal">
+<div class="name"><a href="">Раковина встраиваемая Ideal Standard SAN REMO R 4101</a></div>
+<div class="text">подсветка белая, 500 мм</div>
+</div>
+<div class="price">9 500</div>
+<div class="btn_r"><div class="radio_btn"></div></div>
+</div>
+<div class="select_product">
+<div class="image">
+<a href=""><img src="files/card.jpg" alt=""></a>
+</div>
+<div class="select_product_datal">
+<div class="name"><a href="">Раковина встраиваемая Ideal Standard SAN REMO R 4102</a></div>
+<div class="text">подсветка желтая, 500 мм</div>
+</div>
+<div class="price">9 900</div>
+<div class="btn_r"><div class="radio_btn"></div></div>
+</div>
+<div class="select_product">
+<div class="image">
+<a href=""><img src="files/card.jpg" alt=""></a>
+</div>
+<div class="select_product_datal">
+<div class="name"><a href="">Раковина встраиваемая Ideal Standard SAN REMO R 4103</a></div>
+<div class="text">подсветка зеленая, 500 мм</div>
+<div class="body">Пневматическое управление, массаж, ротационные форсунки для спины, защита от сухого запуска насоса, защита от мокрой остановки</div>
+</div>
+<div class="price">10 700</div>
+<div class="btn_r"><div class="radio_btn"></div></div>
+</div>
+</div>                                                                  
+</div>
+<div class="chech_products">
+<div class="title_table">
+<div class="title_name">Выберите комплектацию</div>
+<div class="price">Цена, руб.</div>
+<div class="select">Выбор</div>
+</div>
+<div class="title">Хромотерапия</div>
+<div class="subtitle">Подсветка для ванны</div>
+<div class="chech_products_inner">
+<div class="chech_product">
+<div class="image">
+<a href=""><img src="files/card.jpg" alt=""></a>
+</div>
+<div class="chech_product_datal">
+<div class="name"><a href="">Раковина встраиваемая Ideal Standard SAN REMO R 4101</a></div>
+<div class="text">подсветка белая, 500 мм</div>
+</div>
+<div class="price">9 500</div>
+<div class="btn_r"><div class="check_btn"></div></div>
+</div>
+<div class="chech_product">
+<div class="image">
+<a href=""><img src="files/card.jpg" alt=""></a>
+</div>
+<div class="chech_product_datal">
+<div class="name">Раковина встраиваемая Ideal Standard SAN REMO R 4102<a href=""></a></div>
+<div class="text">подсветка желтая, 500 мм</div>
+</div>
+<div class="price">9 900</div>
+<div class="btn_r"><div class="check_btn"></div></div>
+</div>
+<div class="chech_product">
+<div class="image">
+<a href=""><img src="files/card.jpg" alt=""></a>
+</div>
+<div class="chech_product_datal">
+<div class="name"><a href="">Раковина встраиваемая Ideal Standard SAN REMO R 4103</a></div>
+<div class="text">подсветка зеленая, 500 мм</div>
+<div class="body">Пневматическое управление, массаж, ротационные форсунки для спины, защита от сухого запуска насоса, защита от мокрой остановки</div>
+</div>
+<div class="price">10 700</div>
+<div class="btn_r"><div class="check_btn"></div></div>
+</div>
+</div>                                                                  
+</div>
+<div class="action_card">
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div>
+</div>                                                                      
+</div>                          
+</div>
+</div>
+</div></div>
+<footer class="footer content-padding">
+<div class="block_inner">
+<div class="copy">© 2013 Магазин сантехники <br>GERHANS. Все права защищены</div>
+<div class="menu_footer">
+<ul>
+<li><a href="">О компании</a></li>
+<li><a href="">Доставка и оплата</a></li>
+<li><a href="">Контакты</a></li>
+</ul>
+</div>
+<div class="phone_block">
+<div><a href="tel:84957654321"><span style="color: #999999;">8</span> <span style="color: #4c4c4c;">495</span> 765 43 21</a></div>
+<div><a href="tel:89169876543"><span style="color: #999999;">8</span> <span style="color: #4c4c4c;">916</span> 987 65 43</a></div>
+<div class="btn_call">Обратный звонок</div>
+</div>
+<div class="copy_dev">
+<img src="files/copy-dev.png" alt="">
+<div class="text">Создание сайта: Smartsoft</div>
+</div>
+<div class="links">
+<div class="count"></div>
+<a href="">Каталог компаний</a> | <a href="">Каталог статей </a>
+</div>
+</div>
+</footer>
+</div>
+<div class="remodal collback" data-remodal-id="collback-popup">
+<button data-remodal-action="close" class="remodal-close-btn"></button>
+<div class="collback__block">
+<form action="">
+<div class="title">Вопрос руководству</div>
+<div class="field">
+<div class="field_name">Имя и фамилия:</div>
+<input type="text">
+</div>
+<div class="field">
+<div class="field_name">Номер телефона:</div>
+<input type="text">
+</div>
+<div class="field">
+<div class="field_name">Комментарий:</div>
+<input type="text">
+</div>
+<div class="field captcha">
+<div class="field_name">Комментарий:</div>
+<div class="captcha_img">
+<img src="files/captcha.jpg" alt="">
+</div>
+<input type="text">
+</div>
+<div class="field radio">
+<div class="field_name">Время звонка:</div>
+<ul>
+<li>
+<label>
+<input type="radio" name="time" value="1">
+<i></i>
+<span>Как можно скорее</span>
+</label>
+</li>
+<li>
+<label>
+<input type="radio" name="time" value="2">
+<i></i>
+<span>После обеда</span>
+</label>
+</li>
+<li>
+<label>
+<input type="radio" name="time" value="3">
+<i></i>
+<span>До обеда</span>
+</label>
+</li>
+</ul>
+</div>
+<div class="field_btn">
+<div class="name"></div>
+<button type="submit" class="btn_button">Отправить запрос</button>
+<input type="reset" class="btn_button" value="Очистить">
+</div>   
+</form>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js" integrity="sha512-a/KwXZUMuN0N2aqT/nuvYp6mg1zKg8OfvovbIlh4ByLw+BJ4sDrJwQM/iSOd567gx+yS0pQixA4EnxBlHgrL6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/lightgallery-all.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

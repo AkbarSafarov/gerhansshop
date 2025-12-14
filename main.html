@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тайтл</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.css" integrity="sha512-nF9G9AnUEVv+zx285OqwGE8c1gmkys3qV6iuDK5rVG/UuZLWRgGBy/tN5WzSXXuZDZ1YvwhJ9+a/DTj71L8Lrw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/lightgallery.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="menu_burger">
+<div class="menu_scroll">
+</div>
+</div>
+<div class="site_wrapper">
+<header class="header">
+<div class="header_top content-padding">
+<div class="block_inner">
+<div class="burger"></div>
+<div class="link_icons">
+<a href="" class="home"></a>
+<a href="" class="feedback"></a>
+<a href="" class="sitemap"></a>
+</div>
+<div class="menu_header">
+<ul>
+<li><a href="">О бренде</a></li>
+<li><a href="">Доставка и оплата</a></li>
+<li><a href="">Контакты</a></li>
+</ul>
+</div>
+<div class="action_link compare_link">
+<a class="name" href="">Сравнение:</a>
+<span id="boqtycompare" class="qty">0</span>
+</div>
+<div class="action_link bookmark_link">
+<a class="name" href="">Закладки:</a>
+<span id="boqtybookmark" class="qty">0</span>
+</div>
+<div class="action_link cart_mini_link">
+<div class="name">Корзина:</div>
+<div class="qty_main">
+<span class="qty">17</span> / <span>213 060 </span>руб.
+</div>
+<a href="" class="btn_button">Оформить</a>
+<div class="cart_mini">
+<div class="cart_mini_body">
+<div class="product_cart">
+<div class="image">
+<img src="files/card.jpg" alt="">
+</div>
+<div class="product_info">
+<div class="product_name">Душевая кабина Jacuzzi Mynima 140 Wall</div>
+<div class="product_price">39 500 <span>руб.</span></div>
+</div>
+<div class="product_controls">
+<button class="qty_btn minus">-</button>
+<input type="text" class="qty_input" value="1" min="1">
+<button class="qty_btn plus">+</button>
+</div>
+<button class="remove_btn"></button>
+</div>
+<div class="product_cart">
+<div class="image">
+<img src="files/card.jpg" alt="">
+</div>
+<div class="product_info">
+<div class="product_name">Мебель для ванной Verona Area, набор из 3 предметов</div>
+<div class="product_price">28 700 <span>руб.</span></div>
+</div>
+<div class="product_controls">
+<button class="qty_btn minus">-</button>
+<input type="text" class="qty_input" value="1" min="1">
+<button class="qty_btn plus">+</button>
+</div>
+<button class="remove_btn"></button>
+</div>
+<div class="product_cart">
+<div class="image">
+<img src="files/card.jpg" alt="">
+</div>
+<div class="product_info">
+<div class="product_name">Душевая кабина Jacuzzi Mynima 80 Sphere</div>
+<div class="product_price">19 990 <span>руб.</span></div>
+</div>
+<div class="product_controls">
+<button class="qty_btn minus">-</button>
+<input type="text" class="qty_input" value="1" min="1">
+<button class="qty_btn plus">+</button>
+</div>
+<button class="remove_btn"></button>
+</div>
+</div>
+<div class="cart_mini_bottom">
+<button type="button" class="btn_button goto_cart">Перейти в корзину</button>
+<button type="button" class="btn_button clear_cart">Очистить</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="header_bottom content-padding">
+<div class="block_inner">
+<div class="top_block">
+<div class="logo">
+<a href="">
+<img src="files/logo.png" alt="">
+</a>
+</div>
+<div class="contacts_header">
+<div class="time_block">
+<div class="name">Работаем: </div>
+<div class="time">09:00 — 20:00</div>
+<div class="text">консультации и заказ <br>ежедневно </div>
+</div>
+<div class="time_block">
+<div class="name">Доставка:</div>
+<div class="time">10:00 — 19:00</div>
+<div class="text">кроме выходных, <br>доставка по округам</div>
+</div>
+<div class="time_block last">
+<div class="name">Оплата:</div>
+<div class="text">Наличными водителю или безналично через банк. <br> Продажа в кредит!</div>
+</div>
+<div class="phone_block">
+<div><a href="tel:84957654321"><span style="color: #999999;">8</span> <span style="color: #4c4c4c;">495</span> 765 43 21</a></div>
+<div><a href="tel:89169876543"><span style="color: #999999;">8</span> <span style="color: #4c4c4c;">916</span> 987 65 43</a></div>
+<div class="btn_call" data-remodal-target="collback-popup">Обратный звонок</div>
+</div>
+</div>
+</div>
+<div class="menu_block">
+<div class="menu_header">
+<ul>
+<li>
+<a href="">Смесители</a>
+<div class="hover_lavel">
+<ul class="name">
+<li><a href="/smesiteli/smesiteli-dlya-rakoviny-i-umyvalnika/gerhans/">Для раковины</a></li>
+<li><a href="/smesiteli/smesiteli-dlya-vanny/gerhans/">Для ванны</a></li>
+<li><a href="/smesiteli/smesiteli-dlya-dusha/gerhans/">Для душа</a></li>
+<li><a href="/smesiteli/smesiteli-dlya-kukhni/gerhans/">Для кухни</a></li>
+<li><a href="/smesiteli/smesiteli-dlya-bide/gerhans/">Для биде</a></li>
+<li><a href="/smesiteli/smesiteli-s-gigienicheskim-dushem/gerhans/">С гигиеническим душем</a></li>
+</ul>
+<ul class="img">
+<li style="display: list-item;"><a href=""><img src="/files/smesiteli-dlya-rakovini.jpg" alt="Для раковины"></a></li>
+<li style="display: none;"><a href=""><img src="/files/smesiteli-dlya-vanni.jpg" alt="Для ванны"></a></li>
+<li style="display: none;"><a href=""><img src="/files/smesiteli-dlya-dusha(2).jpg" alt="Для душа"></a></li>
+<li style="display: none;"><a href=""><img src="/files/smesiteli-dlya-kuhni(2).jpg" alt="Для кухни"></a></li>
+<li style="display: none;"><a href=""><img src="../files/smesiteli-dlya-bide(1).jpg" alt="Для биде"></a></li>
+<li style="display: none;"><a href=""><img src="files/smesiteli-s-gigienicheskim-dushem(3).jpg" alt="С гигиеническим душем"></a></li>
+</ul>
+</div>
+</li>
+<li><a href="">Раковины</a></li>
+<li><a href="">Аксессуары</a></li>
+<li><a href="">Зеркала</a></li>
+<li><a href="">Мойки</a></li>
+<li><a href="">Водоснабжение</a></li>
+</ul>
+</div>
+<div class="search_block">
+<div class="name">Поиск:</div>
+<form action="">
+<input type="text">
+<button></button>
+</form>
+</div>
+</div>
+</div>
+<div class="line"></div>
+</div>
+<div class="content_block_wr"><div class="icons_block content-padding">
+<div class="block_inner">
+<div class="link">
+<a href="">
+<span>Почему именно наш магазин?</span>
+</a>
+</div>
+<div class="item">
+<div class="icon">
+<img src="files/icon-03.png" alt="">
+</div>
+<div class="text">2 000 000 товаров по лучшим ценам</div>
+</div>
+<div class="item">
+<div class="icon">
+<img src="files/icon.png" alt="">
+</div>
+<div class="text">Подтверждение заказа за час</div>
+</div>
+<div class="item">
+<div class="icon">
+<img src="files/icon-04.png" alt="">
+</div>
+<div class="text">Доставка любым удобным способом</div>
+</div>
+<div class="item">
+<div class="icon">
+<img src="files/icon-02.png" alt="">
+</div>
+<div class="text">Гарантированный возврат товара</div>
+</div>
+</div>
+</div>
+<div class="slider_main content-padding">
+<div class="block_inner">
+<div class="menu-slider-wrapper">
+<button class="menu-button-prev"></button>
+<div class="swiper menu-swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="menu-item-content">
+<h3>Раковины для ванной</h3>
+<p>Огромный выбор по доступным ценам</p>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="menu-item-content">
+<h3>Аксессуары</h3>
+<p>Широкие возможности и функционал</p>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="menu-item-content">
+<h3>Акриловые ванны</h3>
+<p>Разнообразие форм и подогрева тепла</p>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="menu-item-content">
+<h3>Мебель для ванной</h3>
+<p>Более 1000 наименований в каталоге</p>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="menu-item-content">
+<h3>Душевые кабины</h3>
+<p>Современный дизайн и технологии</p>
+</div>
+</div>
+</div>
+</div>
+<button class="menu-button-next"></button>
+</div>
+<div class="content-slider-wrapper">
+<div class="swiper content-swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide" style="background-image: url(files/gerhans-slide-00.jpg);">
+<div class="slide-header">
+<h2>Раковины для ванной</h2>
+<div class="slide-info">
+<p>Огромный выбор раковин по доступным ценам. Классические и современные модели, накладные и встраиваемые раковины для любого интерьера ванной комнаты.</p>
+<a href="#" class="slide-link">Все раковины GERHANS</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide" style="background-image: url(files/gerhans-slide-00.jpg);">
+<div class="slide-header">
+<h2>Аксессуары GERHANS: широкие возможности и функционал</h2>
+<div class="slide-info">
+<p>Аксессуары GERHANS подарят вам незабываемые ощущения. Благодаря им вы узнаете, что такое новые ощущения, преисполненные отдыхом и впечатлениями.</p>
+<a href="#" class="slide-link">Все об аксессуарах GERHANS</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide" style="background-image: url(files/gerhans-slide-00.jpg);">
+<div class="slide-header">
+<h2>Акриловые ванны</h2>
+<div class="slide-info">
+<p>Разнообразие форм и подогрева тепла. Современные акриловые ванны с различными системами гидромассажа и комфортными формами для расслабления.</p>
+<a href="#" class="slide-link">Каталог акриловых ванн</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide" style="background-image: url(files/gerhans-slide-00.jpg);">
+<div class="slide-header">
+<h2>Мебель для ванной</h2>
+<div class="slide-info">            
+<p>Более 1000 наименований в каталоге. Тумбы, пеналы, зеркальные шкафы и комплекты мебели для создания функционального и стильного интерьера.</p>
+<a href="#" class="slide-link">Смотреть мебель</a>
+</div>
+</div>
+</div>
+<div class="swiper-slide" style="background-image: url(files/gerhans-slide-00.jpg);">
+<div class="slide-header" >
+<h2>Душевые кабины</h2>
+<div class="slide-info">
+<p>Современный дизайн и технологии. Душевые кабины с различными функциями: тропический душ, гидромассаж, парогенератор и многое другое.</p>
+<a href="#" class="slide-link">Все душевые кабины</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="spes_block content-padding">
+<div class="block_inner">
+<div class="title_block">
+<div class="title">Специальные предложения</div>
+<a href="" class="all">Все предложения <span>(186)</span></a>
+</div>
+<div class="spes_tab_title">
+<ul>
+<li class="active"><a href="#tab-0">Душевые кабины</a></li>
+<li><a href="#tab-1">Смесители</a></li>
+<li><a href="#tab-2">Мебель для ванн</a></li>
+<li><a href="#tab-3">Унитазы</a></li>
+<li><a href="#tab-4">Акриловые ванны</a></li>
+</ul>
+</div>
+<div class="spes_tab_body">
+<div class="tab_body active" id="tab-0">
+<div class="swiper swiper_product">
+<div class="swiper-wrapper">
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+<div class="swiper-scrollbar"></div>
+</div>
+<div class="tab_body " id="tab-1">
+<div class="swiper swiper_product">
+<div class="swiper-wrapper">
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+<div class="swiper-scrollbar"></div>
+</div>
+<div class="tab_body " id="tab-2">
+<div class="swiper swiper_product">
+<div class="swiper-wrapper">
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+<div class="swiper-scrollbar"></div>
+</div>
+<div class="tab_body " id="tab-3">
+<div class="swiper swiper_product">
+<div class="swiper-wrapper">
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+<div class="swiper-scrollbar"></div>
+</div>
+<div class="tab_body" id="tab-4">
+<div class="swiper swiper_product">
+<div class="swiper-wrapper">
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+<div class="swiper-slide"><div class="product_card">
+<div class="image">
+<a href=""><img src="files/product.jpg" alt=""></a>
+</div>
+<div class="name">
+<a href="">Душевая кабина Jacuzzi Mynima 80 Sphere</a>
+</div>
+<div class="params">
+<ul>
+<li>
+<span>Артикул:</span>
+<strong>411060XX</strong>
+</li>
+<li>
+<span>Размеры:</span>
+<strong>60 x 95 x 210 см </strong>
+</li>
+<li>
+<span>Бренд:</span>
+<strong>Jacuzzi</strong>
+</li>
+</ul>
+</div>
+<div class="prices">
+<div class="current">
+<strong>39 500</strong> руб.
+</div>
+<div class="old"><strong>46 250</strong> руб.</div>
+</div>
+<div class="bottom_btns">
+<div class="buy">В корзину</div>
+<div class="compare_btn"></div>
+<div class="bookmark_btn"></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+<div class="swiper-scrollbar"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="text_block_bottom content-padding">
+<div class="block_inner">
+<div class="left">
+<div class="title">Магазин сантехники GERHANS — лучший выбор сантхеники!</div>
+<div class="text">Тысячи товаров со скидками для самых хороших клиентов! Спешите выбрать лучшее по действительно низким ценам!</div>
+<a href="" class="link">Узнать больше о нас</a>
+</div>
+<div class="right">
+<div class="text">
+<p>Наша компания рада предложить своим покупателям большой выбор сантехники для дома, а именно: гидромассажные ванны, мебель для ванной и душевые кабины и углы высокого качества, фаянс, стальные и чугунные ванны.</p>
+<p>С нами Вы сможете подобрать сантехнику по нужным параметрам от лучших Мировых производителей сантехники. Если Вам необходима помощь в выборе сантехники, наши консультанты всегда рады помочь Вам с выбором и дать совет по подбору материалов и установке сантехники. </p>
+<p>Мы уверены, что купленная у нас сантехника будет</p>
+</div>
+<div class="text">
+<p>Немецкая, итальянская, чешская, английская сантехника на нашем сайте представлена такими брендами как: Hansgrohe, DornBracht, Villeroy Boch, Duravit, Huppe, Jado, Keramag, PHARO, Ravak, Teuco, Jacuzzi, Albatros и другими.</p>
+<p>Процесс покупки товаров у нас станет Вашим любимым занятием. Кроме того, наш интернет-салон постоянно устраивает акции и распродажи. Хороших Вам покупок, отличного настроения и приятных встреч! </p>
+<p>Безусловно, современный человек привык к комфорту и маленьким радостям, которые смогут окружать его каждый день и помогать расслабляться и получать </p>
+</div>
+</div>
+</div>
+</div></div>
+<footer class="footer content-padding">
+<div class="block_inner">
+<div class="copy">© 2013 Магазин сантехники <br>GERHANS. Все права защищены</div>
+<div class="menu_footer">
+<ul>
+<li><a href="">О компании</a></li>
+<li><a href="">Доставка и оплата</a></li>
+<li><a href="">Контакты</a></li>
+</ul>
+</div>
+<div class="phone_block">
+<div><a href="tel:84957654321"><span style="color: #999999;">8</span> <span style="color: #4c4c4c;">495</span> 765 43 21</a></div>
+<div><a href="tel:89169876543"><span style="color: #999999;">8</span> <span style="color: #4c4c4c;">916</span> 987 65 43</a></div>
+<div class="btn_call">Обратный звонок</div>
+</div>
+<div class="copy_dev">
+<img src="files/copy-dev.png" alt="">
+<div class="text">Создание сайта: Smartsoft</div>
+</div>
+<div class="links">
+<div class="count"></div>
+<a href="">Каталог компаний</a> | <a href="">Каталог статей </a>
+</div>
+</div>
+</footer>
+</div>
+<div class="remodal collback" data-remodal-id="collback-popup">
+<button data-remodal-action="close" class="remodal-close-btn"></button>
+<div class="collback__block">
+<form action="">
+<div class="title">Вопрос руководству</div>
+<div class="field">
+<div class="field_name">Имя и фамилия:</div>
+<input type="text">
+</div>
+<div class="field">
+<div class="field_name">Номер телефона:</div>
+<input type="text">
+</div>
+<div class="field">
+<div class="field_name">Комментарий:</div>
+<input type="text">
+</div>
+<div class="field captcha">
+<div class="field_name">Комментарий:</div>
+<div class="captcha_img">
+<img src="files/captcha.jpg" alt="">
+</div>
+<input type="text">
+</div>
+<div class="field radio">
+<div class="field_name">Время звонка:</div>
+<ul>
+<li>
+<label>
+<input type="radio" name="time" value="1">
+<i></i>
+<span>Как можно скорее</span>
+</label>
+</li>
+<li>
+<label>
+<input type="radio" name="time" value="2">
+<i></i>
+<span>После обеда</span>
+</label>
+</li>
+<li>
+<label>
+<input type="radio" name="time" value="3">
+<i></i>
+<span>До обеда</span>
+</label>
+</li>
+</ul>
+</div>
+<div class="field_btn">
+<div class="name"></div>
+<button type="submit" class="btn_button">Отправить запрос</button>
+<input type="reset" class="btn_button" value="Очистить">
+</div>   
+</form>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js" integrity="sha512-a/KwXZUMuN0N2aqT/nuvYp6mg1zKg8OfvovbIlh4ByLw+BJ4sDrJwQM/iSOd567gx+yS0pQixA4EnxBlHgrL6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/lightgallery-all.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

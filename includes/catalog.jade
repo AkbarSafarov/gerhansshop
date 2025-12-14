@@ -1,0 +1,107 @@
+include _header.jade
+    <div class="content_site content-padding">
+        <div class="block_inner">
+            <div class="left_panel">
+                <div class="category_menu">
+                    <a href="" class="name">Категории</a>
+                    <ul>
+                        <li class="active">
+                            <a href="">Мебель для ванной</a>
+                            <ul>
+                                <li><a href="">Пеналы и шкафы</a></li>
+                                <li class="active"><a href="">Тумбы</a></li>
+                                <li><a href="">Раковины и зеркала</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter_block">
+                    <div class="title">Группы</div>
+                    <div class="name">По форме</div>
+                    <ul>
+                        <li><a href="">прямоугольные</a></li>
+                        <li><a href="">полукруглые</a></li>
+                        <li><a href="">овальные</a></li>
+                        <li><a href="">круглые</a></li>
+                        <li class="active"><a href="">нестандартные</a></li>
+                        <li><a href="">угловые</a></li>
+                    </ul>
+                    <div class="name">По монтажу</div>
+                    <ul>
+                        <li><a href="">подвесные</a></li>
+                        <li><a href="">накладные раковины</a></li>
+                        <li class="active"><a href="">полувстраиваемые</a></li>
+                        <li><a href="">на столешницу</a></li>
+                        <li><a href="">встраиваемые</a></li>
+                        <li><a href="">под столешницу</a></li>
+                        <li><a href="">подвесные  раковины</a></li>
+                        <li><a href="">накладные</a></li>
+                        <li><a href="">на столешницу</a></li>
+                        <li><a href="">встраиваемые</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right_content">
+                <div class="h1_title">
+                    <h1>Мебель для ванной / Verona / Susan / 110 см</h1>
+                    <div class="link_back"><a href="">Ссылка «назад»</a></div>
+                </div>
+                <div class="path_block">
+                    <a href="">Главная</a><span></span><a href="">Каталог сантехники</a><span></span><a href="">Мебель для ванной</a><span></span><a href="">Verona</a><span></span><a href="">Susan</a><span></span>110 cм
+                </div>
+                <form class="filter_block_hor">
+                    <div class="field select">
+                        <div class="field_inner">
+                            <select name="" id="">
+                                <option value="Мебель для ванной">Мебель для ванной</option>
+                                <option value="Мебель для ванной">Мебель для ванной2</option>
+                                <option value="Мебель для ванной">Мебель для ванной3</option>
+                                <option value="Мебель для ванной">Мебель для ванной4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field select">
+                        <div class="field_inner">
+                            <select name="" id="">
+                                <option value="Verona">Verona</option>
+                                <option value="Verona">Verona</option>
+                                <option value="Verona">Verona</option>
+                                <option value="Verona">Verona</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn_button">Найти</button>
+                    <input type="reset" class="btn_button" value="Сбросить">
+                </form>
+                <div class="product_list_wr">
+                    include _product.jade
+                    include _product.jade
+                    include _product.jade
+                    include _product.jade
+                    include _product.jade
+                    include _product.jade
+                    include _product.jade
+                </div>
+                <div class="pagelist_wr">
+                    <div class="left">
+                        <a href="" class="first">Первая</a>
+                        <a href="" class="prev">Назад</a>
+                    </div>
+                    <ul>
+                        <li><a href="">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><span class="active">3</span></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><span class="dot">...</span></li>
+                        <li><a href="">60</a></li>
+                    </ul>
+                    <div class="right">
+                        <a href="" class="next">Вперед</a>
+                        <a href="" class="last">Последняя</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+include _footer.jade
