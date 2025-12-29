@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const body = document.body;
     const html = document.documentElement;
     const overflowHidden = 'oveflowHidden';
-    const menuBurger = document.querySelector('.menu_burger');
     const discountBanner = document.querySelector('.discount_banner');
     const header = document.querySelector('.header');
     const slider = document.querySelector('.slider_top_block');
@@ -87,9 +86,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 
                 this.parentElement.classList.add('active');
                 tabBodies[index].classList.add('active');
-                
-                initSwiper(index);
             });
+
+            initSwiper(index);
         });
         
         function initSwiper(tabIndex) {
@@ -130,8 +129,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 });
             }
         }
-        
-        initSwiper(0);
     }
 
     const contentSwiperWrap = document.querySelector('.card_image');
@@ -395,4 +392,103 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     updateCartTotal();
+
+
+    const menuBtn = document.querySelector('.burger');
+    const menuWrapper = document.querySelector('.menu_burger');
+    const menuClose = document.querySelector('.menuClose');
+    const openedMenu = 'opened';
+
+    if (!menuBtn || !menuWrapper || !menuClose) return;
+
+    menuBtn.addEventListener('click', function() {
+        menuWrapper.classList.toggle(openedMenu);
+        menuBtn.classList.toggle(openedMenu);
+        HTML.classList.toggle(overflowHidden);
+
+        console.log(123)
+    });
+
+    menuClose.addEventListener('click', function() {
+        menuWrapper.classList.remove(openedMenu);
+        menuBtn.classList.remove(openedMenu);
+        HTML.classList.remove(overflowHidden);
+    });
+
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('.burger') || e.target.closest('.menu_scroll')) return;
+
+        if (menuWrapper.classList.contains(openedMenu)) {
+            menuWrapper.classList.remove(openedMenu);
+            menuBtn.classList.remove(openedMenu);
+            HTML.classList.remove(overflowHidden);
+        }
+    });
+
+    if (menuWrapper){
+
+        const handleMenuItems = (wrap, hasName) => {
+            const menuItems = wrap.querySelectorAll('li a');
+
+            menuItems.forEach(anchor => {
+                const submenu = anchor.parentElement.querySelector('ul');
+
+                if (hasName) {
+                    const nameParent = document.createElement('li');
+                    nameParent.classList.add('name_parent');
+
+                    const parentLi = anchor.closest('li');
+
+                    if (submenu) {
+                        parentLi.classList.add('parent_li');
+                        submenu.prepend(nameParent);
+                        nameParent.textContent = anchor?.textContent || '';
+                    }
+
+                    nameParent.addEventListener('click', ({ target }) => {
+                        const activeMenu = menuWrap.querySelector('ul.activity');
+                        activeMenu?.classList.remove('activity');
+
+                        const parentElement = target.closest('.loaded');
+                        parentElement?.classList.remove('loaded', 'activity');
+
+                        const activityParent = parentElement?.closest('.loaded');
+                        activityParent?.classList.add('activity');
+                    });
+                }
+
+                if (submenu) {
+                    const arrow = document.createElement('i');
+                    arrow.classList.add('arrow');
+                    anchor.append(arrow);
+
+                    arrow.addEventListener('click', (event) => {
+                        event.preventDefault();
+
+                        const currentLi = arrow.closest('li');
+                        currentLi.parentElement.querySelectorAll('li').forEach(siblingLi => {
+                            if (siblingLi !== currentLi) siblingLi.classList.remove('hasSubmenu');
+                        });
+                        
+                        const isActiveLi = currentLi.classList.contains('active');
+                        if(isActiveLi) {
+                            currentLi.classList.remove('active');
+                        } else {
+                            currentLi.classList.toggle('hasSubmenu');
+        
+                            if (hasName) {
+                                const siblingUl = currentLi.querySelector('ul');
+                                const activeMenu = menuWrap.querySelector('ul.activity');
+                                
+                                activeMenu?.classList.remove('activity');
+                                siblingUl?.classList.add('loaded', 'activity');
+                            }
+                        }
+                    });
+                }
+            });
+        };
+
+        handleMenuItems(menuWrapper, false);
+    }
 });
