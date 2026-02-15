@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тайтл</title>
+<link rel="stylesheet" href="css/libs/bootstrap-5.3.3/scss/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.css" integrity="sha512-nF9G9AnUEVv+zx285OqwGE8c1gmkys3qV6iuDK5rVG/UuZLWRgGBy/tN5WzSXXuZDZ1YvwhJ9+a/DTj71L8Lrw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/lightgallery.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/cart-style.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="menu_burger">
+<div class="menuClose"></div>
+<div class="menu_scroll">
+<div class="menu_items">
+<ul>
+<li>
+<a href="">Смесители</a>
+<ul>
+<li><a href="/smesiteli/smesiteli-dlya-rakoviny-i-umyvalnika/gerhans/">Для раковины</a></li>
+<li><a href="/smesiteli/smesiteli-dlya-vanny/gerhans/">Для ванны</a></li>
+<li><a href="/smesiteli/smesiteli-dlya-dusha/gerhans/">Для душа</a></li>
+<li><a href="/smesiteli/smesiteli-dlya-kukhni/gerhans/">Для кухни</a></li>
+<li><a href="/smesiteli/smesiteli-dlya-bide/gerhans/">Для биде</a></li>
+<li><a href="/smesiteli/smesiteli-s-gigienicheskim-dushem/gerhans/">С гигиеническим душем</a></li>
+</ul>
+</li>
+<li><a href="">Раковины</a></li>
+<li><a href="">Аксессуары</a></li>
+<li><a href="">Зеркала</a></li>
+<li><a href="">Мойки</a></li>
+<li><a href="">Водоснабжение</a></li>
+</ul>
+</div>  
+</div>
+</div>
+<div class="site_wrapper">
+<header class="header">
+<div class="header_top content-padding">
+<div class="block_inner">
+<div class="burger"></div>
+<div class="link_icons">
+<a href="" class="home"></a>
+<a href="" class="feedback"></a>
+<a href="" class="sitemap"></a>
+</div>
+<div class="menu_header">
+<ul>
+<li><a href="">О бренде</a></li>
+<li><a href="">Доставка и оплата</a></li>
+<li><a href="">Контакты</a></li>
+</ul>
+</div>
+<div class="action_link compare_link">
+<a class="name" href="">Сравнение:</a>
+<span id="boqtycompare" class="qty">0</span>
+</div>
+<div class="action_link bookmark_link">
+<a class="name" href="">Закладки:</a>
+<span id="boqtybookmark" class="qty">0</span>
+</div>
+<div class="action_link cart_mini_link">
+<div class="name">Корзина:</div>
+<div class="qty_main">
+<span class="qty">17</span> / <span>213 060 </span>руб.
+</div>
+<a href="" class="btn_button">Оформить</a>
+<div class="cart_mini">
+<div class="cart_mini_body">
+<div class="product_cart">
+<div class="image">
+<img src="files/card.jpg" alt="">
+</div>
+<div class="product_info">
+<div class="product_name">Душевая кабина Jacuzzi Mynima 140 Wall</div>
+<div class="product_price">39 500 <span>руб.</span></div>
+</div>
+<div class="product_controls">
+<button class="qty_btn minus">-</button>
+<input type="text" class="qty_input" value="1" min="1">
+<button class="qty_btn plus">+</button>
+</div>
+<button class="remove_btn"></button>
+</div>
+<div class="product_cart">
+<div class="image">
+<img src="files/card.jpg" alt="">
+</div>
+<div class="product_info">
+<div class="product_name">Мебель для ванной Verona Area, набор из 3 предметов</div>
+<div class="product_price">28 700 <span>руб.</span></div>
+</div>
+<div class="product_controls">
+<button class="qty_btn minus">-</button>
+<input type="text" class="qty_input" value="1" min="1">
+<button class="qty_btn plus">+</button>
+</div>
+<button class="remove_btn"></button>
+</div>
+<div class="product_cart">
+<div class="image">
+<img src="files/card.jpg" alt="">
+</div>
+<div class="product_info">
+<div class="product_name">Душевая кабина Jacuzzi Mynima 80 Sphere</div>
+<div class="product_price">19 990 <span>руб.</span></div>
+</div>
+<div class="product_controls">
+<button class="qty_btn minus">-</button>
+<input type="text" class="qty_input" value="1" min="1">
+<button class="qty_btn plus">+</button>
+</div>
+<button class="remove_btn"></button>
+</div>
+</div>
+<div class="cart_mini_bottom">
+<button type="button" class="btn_button goto_cart">Перейти в корзину</button>
+<button type="button" class="btn_button clear_cart">Очистить</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="header_bottom content-padding">
+<div class="block_inner">
+<div class="top_block">
+<div class="logo">
+<a href="">
+<img src="files/logo.png" alt="">
+</a>
+</div>
+<div class="contacts_header">
+<div class="time_block">
+<div class="name">Работаем: </div>
+<div class="time">09:00 — 20:00</div>
+<div class="text">консультации и заказ <br>ежедневно </div>
+</div>
+<div class="time_block">
+<div class="name">Доставка:</div>
+<div class="time">10:00 — 19:00</div>
+<div class="text">кроме выходных, <br>доставка по округам</div>
+</div>
+<div class="time_block last">
+<div class="name">Оплата:</div>
+<div class="text">Наличными водителю или безналично через банк. <br> Продажа в кредит!</div>
+</div>
+<div class="phone_block">
+<div><a href="tel:84957654321"><span style="color: #999999;">8</span> <span style="color: #4c4c4c;">495</span> 765 43 21</a></div>
+<div><a href="tel:89169876543"><span style="color: #999999;">8</span> <span style="color: #4c4c4c;">916</span> 987 65 43</a></div>
+<div class="btn_call" data-remodal-target="collback-popup">Обратный звонок</div>
+</div>
+</div>
+</div>
+<div class="menu_block">
+<div class="menu_header">
+<ul>
+<li>
+<a href="">Смесители</a>
+<div class="hover_lavel">
+<ul class="name">
+<li><a href="/smesiteli/smesiteli-dlya-rakoviny-i-umyvalnika/gerhans/">Для раковины</a></li>
+<li><a href="/smesiteli/smesiteli-dlya-vanny/gerhans/">Для ванны</a></li>
+<li><a href="/smesiteli/smesiteli-dlya-dusha/gerhans/">Для душа</a></li>
+<li><a href="/smesiteli/smesiteli-dlya-kukhni/gerhans/">Для кухни</a></li>
+<li><a href="/smesiteli/smesiteli-dlya-bide/gerhans/">Для биде</a></li>
+<li><a href="/smesiteli/smesiteli-s-gigienicheskim-dushem/gerhans/">С гигиеническим душем</a></li>
+</ul>
+<ul class="img">
+<li style="display: list-item;"><a href=""><img src="/files/smesiteli-dlya-rakovini.jpg" alt="Для раковины"></a></li>
+<li style="display: none;"><a href=""><img src="/files/smesiteli-dlya-vanni.jpg" alt="Для ванны"></a></li>
+<li style="display: none;"><a href=""><img src="/files/smesiteli-dlya-dusha(2).jpg" alt="Для душа"></a></li>
+<li style="display: none;"><a href=""><img src="/files/smesiteli-dlya-kuhni(2).jpg" alt="Для кухни"></a></li>
+<li style="display: none;"><a href=""><img src="../files/smesiteli-dlya-bide(1).jpg" alt="Для биде"></a></li>
+<li style="display: none;"><a href=""><img src="files/smesiteli-s-gigienicheskim-dushem(3).jpg" alt="С гигиеническим душем"></a></li>
+</ul>
+</div>
+</li>
+<li><a href="">Раковины</a></li>
+<li><a href="">Аксессуары</a></li>
+<li><a href="">Зеркала</a></li>
+<li><a href="">Мойки</a></li>
+<li><a href="">Водоснабжение</a></li>
+</ul>
+</div>
+<div class="search_block">
+<div class="name">Поиск:</div>
+<form action="">
+<input type="text">
+<button></button>
+</form>
+</div>
+</div>
+</div>
+<div class="line"></div>
+</div>
+<div class="content_block_wr"><main>
+<div class="cart">
+<section class="section content-padding">
+<div class="block_inner d-flex align-items-start cart-page-wrapper">
+<div class="flex-fill cart__left">
+<h1 class="cart__heading">Моя корзина</h1>
+<!-- 1. Ваши контакты -->
+<div class="order__item-top">
+<div class="order__item-head"><span>1</span>ваши контакты</div>
+</div>
+<div class="order__item">                        
+<div class="order__item-border">
+<div class="order__item-group-radio">
+<label class="order__item-label-radio">
+<input type="radio" name="person" checked>
+<i></i>
+<span class="order__item-radio-name">Физическое лицо</span>
+</label>
+<label class="order__item-label-radio">
+<input type="radio" name="person">
+<i></i>
+<span class="order__item-radio-name">Юридическое лицо</span>
+</label>
+</div>
+</div>
+<div class="order__item-fields">
+<div class="order__item-row">
+<span>Телефон<i>*</i></span>
+<input type="tel" required placeholder="+7 (___) ___-__-__">
+</div>
+<div class="order__item-row">
+<span>Имя<i>*</i></span>
+<input type="text" required>
+</div>
+<div class="order__item-row">
+<span>E-mail <i>*</i></span>
+<input type="email" required>
+</div>
+</div>
+<div class="order__item-border top-border">
+<div class="order__item-group-radio">
+<label class="order__item-label-radio d-flex align-items-center gap-3" style="width: 100%;">
+<input type="radio" name="garant">
+<i></i>
+<span class="order__item-radio-name">Раширенная гарантия</span>
+<span class="order__item-radio-text">Дополнительная гарантия на один год с бесплатным сервисом</span>
+</label>
+</div>
+</div>
+</div>
+<!-- 2. Способ получения -->
+<div class="order__item-top">
+<div class="order__item-head"><span>2</span>Способ получения</div>
+</div>
+<div class="order__item">                        
+<div class="order__item-border">
+<div class="order__item-fields">
+<div class="order__item-row">
+<span>Местоположение</span>
+<div class="field_select">
+<select name="" id="">
+<option value="">Москва</option>
+<option value="">Москва</option>
+<option value="">Москва</option>
+<option value="">Москва</option>
+<option value="">Москва</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<div class="order__item-labels">
+<div class="order__item-label block">
+<span class="order__item-radio jsOrderLabelHead delivery">
+<label class="order__item-label-radio">
+<i></i>
+</label>
+<span class="right">
+<span>Доставка по Москве</span>
+<span class="order__item-radio-descr">При заказе от 5000 ₽ доставка в пределах МКАД осуществляется бесплатно</span>
+</span>
+</span>
+</div>
+<div class="order__item-label block">
+<span class="order__item-radio jsOrderLabelHead delivery">
+<label class="order__item-label-radio">
+<i></i>
+</label>
+<span class="right">
+<span>Доставка по Московской области</span>
+<span class="order__item-radio-descr">При заказе от 5000 ₽ бесплатная доставка в пределах МКАД + 35 ₽ за каждый километр от МКАД</span>
+</span>
+</span>
+</div>
+<div class="order__item-label block">
+<span class="order__item-radio jsOrderLabelHead delivery">
+<label class="order__item-label-radio">
+<i></i>
+</label>
+<span class="right">
+<span>Самовывоз</span>
+<span class="order__item-radio-descr">Бесплатный самовывоз со склада в Москве по адресу мкр. Северное Чертаново, д.5</span>
+</span>
+</span>
+</div>
+<div class="order__item-label block active">
+<span class="order__item-radio jsOrderLabelHead delivery">
+<label class="order__item-label-radio">
+<i></i>
+</label>
+<span class="right">
+<span>Курьерская служба</span>
+<span class="order__item-radio-descr">Доставка заказа курьером одной из курьерских служб</span>
+</span>
+</span>
+<div class="order__item-label-body">
+<div class="order__item-label-inner">
+<div class="order__item-label-logo">
+<svg width="51" height="14" viewBox="0 0 51 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.00079 3.3883H7.54772C4.63454 3.3883 2.14655 10.6188 5.58439 10.6119H7.79574C9.07174 10.6119 10.0143 11.0671 9.59603 12.299L9.02223 13.993H6.6759L4.76919 13.9718C2.33074 13.951 0.757197 12.7681 0.190342 10.9762C-0.426376 9.03725 0.445345 4.99792 2.95461 2.40809C4.41463 0.903216 6.43481 0 9.02223 0H13.8065L13.0552 2.12129C12.6038 3.40588 11.7051 3.39567 11.1329 3.38916C11.094 3.38873 11.0566 3.3883 11.021 3.3883H9.00079ZM35.4325 5.31325H27.7276C26.452 5.31325 25.8776 5.66292 25.6437 6.38394L24.9208 8.69387H32.6258C33.9015 8.69387 34.4757 8.344 34.7097 7.62287L35.4325 5.31325ZM25.8494 10.6188H33.5542L32.8311 12.9293C32.5972 13.6501 32.0231 13.9999 30.7473 13.9999H23.0422L23.7655 11.69C23.9994 10.9691 24.5734 10.6188 25.8494 10.6188ZM29.5141 0.0139516H37.2188L36.4958 2.32436C36.2618 3.04488 35.6876 3.39519 34.412 3.39519H26.707L27.4299 1.08527C27.6638 0.364266 28.2382 0.0139516 29.5141 0.0139516ZM17.8467 3.38133H19.7677C21.4051 3.38133 21.0294 5.39725 20.2001 7.36425C19.4698 9.09319 18.1799 10.6258 16.6417 10.6258H13.4451C12.1691 10.6258 11.5808 10.9761 11.3326 11.6973L10.546 14H12.8922L15.1817 13.9788C17.2159 13.9649 18.8746 13.8178 20.8238 12.0888C22.8795 10.262 25.2751 5.52316 24.864 2.78625C24.5452 0.637044 23.3756 0.00698886 20.5402 0.00698886H15.3802L12.3747 8.68687H14.2814H14.3105C15.4255 8.687 15.9948 8.68706 16.5922 7.09813L17.8467 3.38133ZM37.7788 13.9999H34.1424L39.0333 6.8082e-06H42.6697L40.5856 6.02721H40.628C41.0623 5.48653 41.5021 5.02853 41.9375 4.57509C41.9926 4.51776 42.0476 4.4605 42.1025 4.40316L46.2917 6.8082e-06H50.75L43.8532 6.18104L46.7239 13.9999H43.9383C43.0453 13.9999 42.6412 13.4611 42.2441 12.2293L40.9611 8.24587L39.338 9.59706L37.7788 13.9999Z" fill="#24A462" />
+</svg>
+</div>
+<div class="order__item-label-wrapper">
+<div class="order__item-label">
+<label class="order__item-label-radio">
+<input type="radio" name="order-courier" id="order-courier1">
+<span class="top-radio">
+<i></i>
+<span class="name">
+<span class="order__item-radio-top">
+<span class="price">642.30 ₽</span>
+<span class="days">1 дня</span>
+</span>
+<span class="name-radio">Посылка «Склад–Дверь»</span>
+<span class="war-icon">
+<span class="war_tooltip">Склад-Дверь - Отправитель самостоятельно доставляет груз/документы в офисе СДЭК, получателю доставляет отправление курьер</span>
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 0C2.7 0 0 2.7 0 6C0 9.3 2.7 12 6 12C9.3 12 12 9.3 12 6C12 2.7 9.3 0 6 0ZM6.75 9.15C6.75 9.375 6.6 9.525 6.375 9.525H5.625C5.4 9.525 5.25 9.375 5.25 9.15V5.4C5.25 5.175 5.4 5.025 5.625 5.025H6.375C6.6 5.025 6.75 5.175 6.75 5.4V9.15ZM6 4.275C5.55 4.275 5.1 3.9 5.1 3.375C5.1 2.85 5.475 2.475 6 2.475C6.525 2.475 6.9 2.85 6.9 3.375C6.9 3.9 6.45 4.275 6 4.275Z" fill="#999999" />
+</svg>
+</span>
+</span>
+</span>
+</label>
+</div>
+<div class="order__item-label">
+<label class="order__item-label-radio">
+<input type="radio" name="order-courier" id="order-courier2">
+<span class="top-radio">
+<i></i>
+<span class="name">
+<span class="order__item-radio-top">
+<span class="price">642.30 ₽</span>
+<span class="days">1 дня</span>
+</span>
+<span class="name-radio">Магистральный «Склад–Дверь»</span>
+<span class="war-icon">
+<span class="war_tooltip">Склад-Дверь - Отправитель самостоятельно доставляет груз/документы в офисе СДЭК, получателю доставляет отправление курьер</span>
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 0C2.7 0 0 2.7 0 6C0 9.3 2.7 12 6 12C9.3 12 12 9.3 12 6C12 2.7 9.3 0 6 0ZM6.75 9.15C6.75 9.375 6.6 9.525 6.375 9.525H5.625C5.4 9.525 5.25 9.375 5.25 9.15V5.4C5.25 5.175 5.4 5.025 5.625 5.025H6.375C6.6 5.025 6.75 5.175 6.75 5.4V9.15ZM6 4.275C5.55 4.275 5.1 3.9 5.1 3.375C5.1 2.85 5.475 2.475 6 2.475C6.525 2.475 6.9 2.85 6.9 3.375C6.9 3.9 6.45 4.275 6 4.275Z" fill="#999999" />
+</svg>
+</span>
+</span>
+</span>
+</label>
+</div>
+<div class="order__item-label">
+<label class="order__item-label-radio">
+<input type="radio" name="order-courier" id="order-courier3" checked>
+<span class="top-radio">
+<i></i>
+<span class="name">
+<span class="order__item-radio-top">
+<span class="price">642.30 ₽</span>
+<span class="days">1 дня</span>
+</span>
+<span class="name-radio">Посылка «Дверь–Дверь»</span>
+<span class="war-icon">
+<span class="war_tooltip">Склад-Дверь - Отправитель самостоятельно доставляет груз/документы в офисе СДЭК, получателю доставляет отправление курьер</span>
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 0C2.7 0 0 2.7 0 6C0 9.3 2.7 12 6 12C9.3 12 12 9.3 12 6C12 2.7 9.3 0 6 0ZM6.75 9.15C6.75 9.375 6.6 9.525 6.375 9.525H5.625C5.4 9.525 5.25 9.375 5.25 9.15V5.4C5.25 5.175 5.4 5.025 5.625 5.025H6.375C6.6 5.025 6.75 5.175 6.75 5.4V9.15ZM6 4.275C5.55 4.275 5.1 3.9 5.1 3.375C5.1 2.85 5.475 2.475 6 2.475C6.525 2.475 6.9 2.85 6.9 3.375C6.9 3.9 6.45 4.275 6 4.275Z" fill="#999999" />
+</svg>
+</span>
+</span>
+</span>
+</label>
+</div>
+</div>
+</div>
+<div class="order__item-label-inner">
+<div class="order__item-label-logo">
+<svg width="140" height="21" viewBox="0 0 140 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.2548 18.841H43.2805L44.2075 17.2456H39.2548V18.841ZM32.6369 9.8805H31.1818L26.9136 17.2297H25.8357V21H27.5333V18.841H36.2692V21H37.9668V17.2297H36.8889L32.6369 9.8805ZM29.0369 17.2297L31.8447 12.3746L34.6793 17.2297H29.0369ZM12.6646 15.2727L4.19279 11.662L2.39822 14.7303L11.91 16.533L12.6646 15.2727ZM16.3076 9.04028L11.0209 0L9.02688 3.40872L15.3699 10.6356L16.3076 9.04028ZM14.9496 11.3642L8.60649 4.13725L6.81194 7.20562L14.2113 12.6245L14.9496 11.3642ZM95.1513 11.4971H86.8628V13.0925H94.1919L95.1513 11.4971ZM13.8125 13.3052L6.41314 7.88633L4.60776 10.9812L13.0634 14.5867L13.8125 13.3052ZM1.98864 15.4323L0 18.8357H10.5682L11.5059 17.2403L1.98864 15.4323ZM11.4843 18.8357H14.2921L16.7657 14.6133L19.2394 18.8357H22.0471L16.7657 9.79541L11.4843 18.8357ZM39.2548 14.3368V15.9321H44.9347L45.8888 14.3368H39.2548ZM47.5434 11.4811H39.2548V13.0765H46.595L47.5434 11.4811ZM105.509 16.2246V11.4971H103.726V18.841H105.224L109.535 14.0549V18.841H111.314V11.4971H109.821L105.509 16.2246ZM86.8465 14.3528V15.9481H92.5268L93.4752 14.3528H86.8465ZM97.3176 11.4971L93.0548 18.841H95.1565L97.9697 13.9911L100.799 18.841H103.004L98.7351 11.4971H97.3176ZM118.998 14.3528H115.097V11.4971H113.313V18.841H115.097V15.9694H118.998V18.841H120.777V11.4971H118.998V14.3528ZM138.399 11.4971L134.191 16.2831V11.4971H132.412V18.841H133.91L138.222 14.0549V18.841H140V11.4971H138.399ZM124.608 16.2831V11.4971H122.83V18.841H124.323L128.634 14.0549V18.841H130.413V11.4971H128.834L124.608 16.2831ZM79.7276 14.156H77.0329V11.4971H75.2546V18.841H79.7219C80.9345 18.841 82.1905 18.1816 82.1905 16.4479C82.1905 14.1719 80.5737 14.1347 79.7381 14.1347M79.6411 17.2829H77.0329V15.6503H79.6411C79.9431 15.6503 80.4118 15.7301 80.4118 16.4639C80.4118 17.1978 80.0238 17.2829 79.6411 17.2829ZM72.0535 14.5123C72.3273 14.4205 72.5621 14.2407 72.7206 14.0016C72.879 13.7625 72.9514 13.478 72.9264 13.1935C72.9264 11.6779 71.633 11.4971 70.7219 11.4971H65.9097V18.841H70.8031C73.0502 18.841 73.4974 17.6232 73.4974 16.5065C73.536 16.0567 73.4096 15.6082 73.1419 15.2424C72.8737 14.8765 72.4818 14.6175 72.0372 14.5123M67.6503 13.0552H70.4797C70.9054 13.0552 71.0888 13.2732 71.0888 13.6934C71.0976 13.7772 71.0888 13.862 71.0621 13.9422C71.0357 14.0224 70.9923 14.096 70.9348 14.1584C70.8769 14.2207 70.8066 14.2703 70.7285 14.3038C70.65 14.3373 70.5653 14.354 70.4797 14.3528H67.6288L67.6503 13.0552ZM70.7869 17.2829H67.6503V15.6875H70.7869C71.2934 15.6875 71.6545 15.8098 71.6545 16.4639C71.6545 16.9957 71.4334 17.2616 70.7869 17.2616M86.868 18.8197H90.8885L91.8207 17.2244H86.868V18.8197ZM59.9222 11.3003C56.9475 11.3003 55.5357 13.0924 55.5357 15.1079C55.5357 17.2084 56.9098 18.9207 59.9222 18.9207C61.2371 18.9207 64.2714 18.3252 64.2714 15.1079C64.2714 13.0126 62.9188 11.3003 59.9222 11.3003ZM59.9222 17.3041C58.2031 17.3041 57.4755 16.3257 57.4755 15.1291C57.4755 13.8103 58.3054 12.9329 59.9222 12.9329C61.7439 12.9329 62.3689 13.8103 62.3689 15.1291C62.3689 16.7245 61.1778 17.3041 59.9222 17.3041ZM49.7746 11.4545L45.5009 18.7985H47.6079L50.4211 13.9486L53.2505 18.7985H55.39L51.1215 11.4545H49.7746ZM83.1227 18.7985H84.8795V11.5024H83.1227V18.7985Z" fill="black" />
+</svg>
+</div>
+<div class="order__item-label-wrapper">
+<div class="order__item-label">
+<label class="order__item-label-radio">
+<input type="radio" name="order-courier" id="order-courier4">
+<span class="top-radio">
+<i></i>
+<span class="name">
+<span class="order__item-radio-top">
+<span class="price">642.30 ₽</span>
+<span class="days">1 дня</span>
+</span>
+<span class="name-radio">Автотранспортная перевозка</span>
+<span class="war-icon">
+<span class="war_tooltip">Склад-Дверь - Отправитель самостоятельно доставляет груз/документы в офисе СДЭК, получателю доставляет отправление курьер</span>
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 0C2.7 0 0 2.7 0 6C0 9.3 2.7 12 6 12C9.3 12 12 9.3 12 6C12 2.7 9.3 0 6 0ZM6.75 9.15C6.75 9.375 6.6 9.525 6.375 9.525H5.625C5.4 9.525 5.25 9.375 5.25 9.15V5.4C5.25 5.175 5.4 5.025 5.625 5.025H6.375C6.6 5.025 6.75 5.175 6.75 5.4V9.15ZM6 4.275C5.55 4.275 5.1 3.9 5.1 3.375C5.1 2.85 5.475 2.475 6 2.475C6.525 2.475 6.9 2.85 6.9 3.375C6.9 3.9 6.45 4.275 6 4.275Z" fill="#999999" />
+</svg>
+</span>
+</span>
+</span>
+</label>
+</div>
+<div class="order__item-label">
+<label class="order__item-label-radio">
+<input type="radio" name="order-courier" id="order-courier5">
+<span class="top-radio">
+<i></i>
+<span class="name">
+<span class="order__item-radio-top">
+<span class="price">642.30 ₽</span>
+<span class="days">1 дня</span>
+</span>
+<span class="name-radio">Автотранспортная перевозка</span>
+<span class="war-icon">
+<span class="war_tooltip">Склад-Дверь - Отправитель самостоятельно доставляет груз/документы в офисе СДЭК, получателю доставляет отправление курьер</span>
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 0C2.7 0 0 2.7 0 6C0 9.3 2.7 12 6 12C9.3 12 12 9.3 12 6C12 2.7 9.3 0 6 0ZM6.75 9.15C6.75 9.375 6.6 9.525 6.375 9.525H5.625C5.4 9.525 5.25 9.375 5.25 9.15V5.4C5.25 5.175 5.4 5.025 5.625 5.025H6.375C6.6 5.025 6.75 5.175 6.75 5.4V9.15ZM6 4.275C5.55 4.275 5.1 3.9 5.1 3.375C5.1 2.85 5.475 2.475 6 2.475C6.525 2.475 6.9 2.85 6.9 3.375C6.9 3.9 6.45 4.275 6 4.275Z" fill="#999999" />
+</svg>
+</span>
+</span>
+</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="order__item-label block">
+<span class="order__item-radio jsOrderLabelHead delivery">
+<label class="order__item-label-radio">
+<input type="radio" name="delivery">
+<i></i>
+</label>
+<span class="right">
+<span>Пункт выдачи</span>
+<span class="order__item-radio-descr">Доставка заказа до пункта самовывоза одной из курьерских служб</span>
+</span>
+</span>
+<div class="order__item-label-body">
+<div class="order__item-label-inner order-pvz">
+<div class="order__item-label-wrapper">
+<div class="order__item-label">
+<label class="order__item-label-radio">
+<span class="top-radio">
+<span class="name">
+<span class="order__item-radio-top">
+<span class="price">642.30 ₽</span>
+</span>
+<span class="name-radio">Срок доставки 1 день</span>
+</span>
+</span>
+</label>
+<button class="select_map">
+<span>Выбрать на карте</span>
+<i>
+<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.1795 4.14376C13.133 1.94969 10.9761 0.563132 8.54828 0.531257C6.11515 0.499382 3.95828 1.83813 2.87453 4.03751C1.74828 6.31657 2.0139 8.95688 3.57578 10.9384L7.60796 16.0597C7.70859 16.1875 7.83689 16.2907 7.9832 16.3617C8.12951 16.4327 8.29002 16.4696 8.45265 16.4696C8.61528 16.4696 8.77579 16.4327 8.9221 16.3617C9.06841 16.2907 9.19671 16.1875 9.29734 16.0597L13.4358 10.8003C14.9392 8.88782 15.2208 6.34313 14.1795 4.14907V4.14376ZM12.607 10.1416L8.44734 15.4009L4.41515 10.2797C3.11359 8.62751 2.89046 6.41219 3.83078 4.51032C4.7339 2.68282 6.46046 1.59907 8.45796 1.59907H8.53765C10.5883 1.63094 12.3414 2.75188 13.2233 4.60595C14.1052 6.46001 13.8767 8.52657 12.607 10.1416Z" fill="white" />
+<path d="M8.45238 3.80377C6.85332 3.80377 5.55176 5.10533 5.55176 6.7044C5.55176 8.30346 6.85332 9.60502 8.45238 9.60502C10.0514 9.60502 11.353 8.30346 11.353 6.7044C11.353 5.10533 10.0514 3.80377 8.45238 3.80377ZM8.45238 8.53721C7.97253 8.52567 7.51622 8.32695 7.18092 7.98349C6.84562 7.64003 6.65792 7.17907 6.65792 6.69908C6.65792 6.2191 6.84562 5.75814 7.18092 5.41468C7.51622 5.07122 7.97253 4.8725 8.45238 4.86096C8.93223 4.8725 9.38855 5.07122 9.72385 5.41468C10.0591 5.75814 10.2468 6.2191 10.2468 6.69908C10.2468 7.17907 10.0591 7.64003 9.72385 7.98349C9.38855 8.32695 8.93223 8.52567 8.45238 8.53721Z" fill="white" />
+</svg>
+</i>    
+</button>
+<div class="order-pvz-address">Адрес пункта выдачи <br>Москва, Пятницкое шоссе, д.42, кв.147.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Адрес доставки -->
+<div class="order__item-top">
+<div class="order__item-head"><span>3</span>Адрес доставки</div>
+</div>
+<div class="order__item">
+<div class="order__item-border variant-2">
+<div class="order__item-fields">
+<div class="order__item-row">
+<span>Улица*</span>
+<input type="text">
+</div>
+<div class="order__item-row">
+<span>Дом/Корпус*</span>
+<input type="text">
+</div>
+<div class="order__item-row">
+<span>Кв./Офис</span>
+<input type="text">
+</div>
+<div class="order__item-row">
+<span>Подъезд</span>
+<input type="text">
+</div>
+<div class="order__item-row">
+<span>Код домофона</span>
+<input type="text">
+</div>
+<div class="order__item-row">
+<span>Комментарий</span>
+<textarea name="" id=""></textarea>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. Детали доставки -->
+<div class="order__item-top">
+<div class="order__item-head"><span>4</span>Детали доставки</div>
+</div>
+<div class="order__item">
+<div class="order__item-border">
+<label class="order__item-label-radio">
+<input type="radio" name="orderAnother" checked>
+<i></i>
+<span class="order__item-radio-name">Заказ получает другой человек</span>
+</label><br><br>
+<div class="order__item-fields">
+<div class="order__item-row">
+<span>Телефон получателя*</span>
+<input type="tel">
+</div>
+</div>
+</div>
+<div class="form-check-wr">
+<label class="order__item-label-radio">
+<input type="radio" name="orderAnother" checked>
+<i></i>
+<span class="order__item-radio-name">Позвонить за час</span>
+</label>
+</div>
+</div>
+<!-- 5. Способ оплаты -->
+<div class="order__item-top">
+<div class="order__item-head"><span>5</span>Способ оплаты</div>
+</div>
+<div class="order__item">
+<div class="order__item-labels-payment">
+<label class="order__item-label">
+<input type="radio" name="pay" checked>
+<span class="order__item-radio payment">
+<i></i>
+<span>Онлайн</span>
+<span class="order__item-radio-descr">Оплата производится сразу после оформления заказа</span>
+</span>
+</label>
+<label class="order__item-label">
+<input type="radio" name="pay">
+<span class="order__item-radio payment">
+<i></i>
+<span>Картой или QR-коду</span>
+<span class="order__item-radio-descr">Оплата производится при получении товара</span>
+</span>
+</label>
+<label class="order__item-label">
+<input type="radio" name="pay">
+<span class="order__item-radio payment">
+<i></i>
+<span>Наличными</span>
+<span class="order__item-radio-descr">Оплата производится при получении товара</span>
+</span>
+</label>
+<label class="order__item-label">
+<input type="radio" name="pay">
+<span class="order__item-radio payment">
+<i></i>
+<span>Банковский перевод</span>
+<span class="order__item-radio-descr">Оплата по счету на реквизиты компании для юридических лиц</span>
+</span>
+</label>
+</div>
+</div>
+<!-- 6. Подтверждение заказа -->
+<div class="order__item-top">
+<div class="order__item-head"><span>6</span>подтверждение заказа</div>
+</div>
+<div class="order__item">
+<div class="order__item-labels-last-step">    
+<label class="order__item-label-radio">
+<input type="radio" name="call" checked>
+<i></i>
+<span>Нужен звонок от мененджера</span>
+<span class="order__item-radio-text">У меня остались вопросы</span>
+</label>
+</div>
+</div>
+</div>
+<aside class="basket__aside">
+<div class="basket__aside-inner">
+<div class="basket__aside-item border-item">
+<div class="basket__aside-head">
+<div class="basket__aside-head-name">Ваш заказ</div>
+<div class="basket__aside-head-value">4 товара</div>
+</div>
+</div>
+<!-- <div class="basket__aside-item">
+<div class="basket__aside-item-coupon">
+<input type="text" placeholder="Промокод">
+<button class="btn">
+<span>ПРИМЕНИТЬ</span>
+</button>
+</div>
+</div> -->
+<div class="basket__aside-item border-item">
+<div class="basket__aside-calc">
+<span>Стоимость товаров</span>
+<span>13 700 ₽</span>
+</div>
+<div class="basket__aside-calc">
+<span>Скидка по акции</span>
+<span>-2 897 ₽</span>
+</div>
+<div class="basket__aside-calc">
+<span>Доставка <i>(условия уточнит менеджер)</i></span>
+<span>650 ₽</span>
+</div>
+</div>
+<div class="basket__aside-item">
+<div class="basket__aside-calc total">
+<span class="lsp">Итого:</span>
+<span class="right">50 171 <ins>₽</ins></span>
+</div>
+</div>
+<div class="basket__aside-item last">
+<button class="btn basket__aside-btn">
+<span>Оформить заказ</span>
+</button>
+</div>
+</div>
+<div class="basket__aside-info">
+<p>Нажимая «Оформить заказ», я&nbsp;даю своё&nbsp;Согласие на&nbsp;обработку персональных данных&nbsp;и&nbsp;соглашаюсь с&nbsp;условиями&nbsp;Политики конфиденциальности,&nbsp;Публичной оферты для физических лиц&nbsp;и&nbsp;Правилами программы лояльности</p>
+</div>
+</aside>
+</div>
+</section>
+</div>
+</main></div>
+<footer class="footer content-padding">
+<div class="block_inner">
+<div class="copy">© 2013 Магазин сантехники <br>GERHANS. Все права защищены</div>
+<div class="menu_footer">
+<ul>
+<li><a href="">О компании</a></li>
+<li><a href="">Доставка и оплата</a></li>
+<li><a href="">Контакты</a></li>
+</ul>
+</div>
+<div class="phone_block">
+<div><a href="tel:84957654321"><span style="color: #999999;">8</span> <span style="color: #4c4c4c;">495</span> 765 43 21</a></div>
+<div><a href="tel:89169876543"><span style="color: #999999;">8</span> <span style="color: #4c4c4c;">916</span> 987 65 43</a></div>
+<div class="btn_call"  data-remodal-target="collback-popup">Обратный звонок</div>
+</div>
+<div class="copy_dev">
+<img src="files/copy-dev.png" alt="">
+<div class="text">Создание сайта: Smartsoft</div>
+</div>
+<div class="links">
+<div class="count"></div>
+<a href="">Каталог компаний</a> | <a href="">Каталог статей </a>
+</div>
+</div>
+</footer>
+</div>
+<div class="remodal collback" data-remodal-id="collback-popup">
+<button data-remodal-action="close" class="remodal-close-btn"></button>
+<div class="collback__block">
+<form action="">
+<div class="title">Вопрос руководству</div>
+<div class="field">
+<div class="field_name">Имя и фамилия:</div>
+<input type="text">
+</div>
+<div class="field">
+<div class="field_name">Номер телефона:</div>
+<input type="text">
+</div>
+<div class="field">
+<div class="field_name">Комментарий:</div>
+<input type="text">
+</div>
+<div class="field captcha">
+<div class="field_name">Комментарий:</div>
+<div class="captcha_img">
+<img src="files/captcha.jpg" alt="">
+</div>
+<input type="text">
+</div>
+<div class="field radio">
+<div class="field_name">Время звонка:</div>
+<ul>
+<li>
+<label>
+<input type="radio" name="time" value="1">
+<i></i>
+<span>Как можно скорее</span>
+</label>
+</li>
+<li>
+<label>
+<input type="radio" name="time" value="2">
+<i></i>
+<span>После обеда</span>
+</label>
+</li>
+<li>
+<label>
+<input type="radio" name="time" value="3">
+<i></i>
+<span>До обеда</span>
+</label>
+</li>
+</ul>
+</div>
+<div class="field_btn">
+<div class="name"></div>
+<button type="submit" class="btn_button">Отправить запрос</button>
+<input type="reset" class="btn_button" value="Очистить">
+</div>   
+</form>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js" integrity="sha512-a/KwXZUMuN0N2aqT/nuvYp6mg1zKg8OfvovbIlh4ByLw+BJ4sDrJwQM/iSOd567gx+yS0pQixA4EnxBlHgrL6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/lightgallery-all.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

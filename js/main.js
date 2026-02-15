@@ -491,4 +491,60 @@ document.addEventListener("DOMContentLoaded", function() {
 
         handleMenuItems(menuWrapper, false);
     }
+
+    const orderLabel = document.querySelectorAll('.jsOrderLabelHead');
+
+    if(orderLabel.length) {
+        orderLabel.forEach(head => {
+            head.addEventListener('click', function () {
+                const parent = this.closest('.order__item-label.block');
+                const allBlocks = document.querySelectorAll('.order__item-label.block');
+
+                allBlocks.forEach(block => {
+                    if (block === parent) {
+                        block.classList.toggle('active');
+                    } else {
+                        block.classList.remove('active');
+                    }
+                });
+            });
+        });
+    }
+    
+    let itemTooltip;
+    document.querySelectorAll('.cart-header-btns > a').forEach(function(item){
+        itemTooltip = item.dataset.tooltip;
+        
+        if(itemTooltip) {
+            tippy(item, {
+                theme: 'light',
+                content: itemTooltip,
+                placement: 'bottom',
+                arrow: true, 
+            });
+        }
+    })
+
+    const fizCheckbox = document.querySelector('input[name="fiz"]');
+    const yurCheckbox = document.querySelector('input[name="yur"]');
+
+    if(fizCheckbox && yurCheckbox) {
+        const innField = document.querySelector('.inn-field');
+
+        function toggleFields(e) {
+            if (e.target === fizCheckbox) {
+                yurCheckbox.checked = false;
+                innField.classList.add('d-none');
+            } else if (e.target === yurCheckbox) {
+                fizCheckbox.checked = false;
+                innField.classList.remove('d-none');
+            }
+        }
+
+        fizCheckbox.addEventListener("change", toggleFields);
+        yurCheckbox.addEventListener("change", toggleFields);
+
+        fizCheckbox.checked = true;
+        innField.classList.add('d-none');
+    }
 });
